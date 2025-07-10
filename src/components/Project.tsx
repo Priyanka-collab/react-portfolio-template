@@ -1,14 +1,12 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import aistory from '../assets/images/ai-story.png';
+import cicd from '../assets/images/cicd.png';
+import insurance from '../assets/images/insurance.jpg';
+import ngrx from '../assets/images/ngrx.jpg';
+import ngrxState from '../assets/images/ngrx-state.jpg';
+import todo from '../assets/images/Todo.jpg';
+import login from '../assets/images/login.png';
+import ekart from '../assets/images/bigbasket.jpg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -17,55 +15,46 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <a target="_blank" rel="noreferrer"><img src={aistory} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://ai-story-buddy.vercel.app" target="_blank" rel="noreferrer"><h2>AI Story Buddy</h2></a>
+                <p>AI Story Buddy is a creative, web-based storytelling application designed especially for children aged 3–7 years. It leverages Generative AI and speech technologies to make story creation fun, educational, and interactive. Users can speak a story prompt in their preferred language like English, Telugu and Hindi, and the app uses LLMs (via OpenRouter) to generate a rich, imaginative story. The story is then narrated aloud with relevant AI-generated images.</p>
             </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
+                <a  target="_blank" rel="noreferrer"><img src={cicd} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://cicd-generator.vercel.app" target="_blank" rel="noreferrer"><h2>CICD Generator</h2></a>
+                <p>CI/CD Generator is a web-based tool that dynamically generates GitLab CI/CD YAML pipelines using AI. Users can select stages like build, test, deploy, and choose tools (e.g., Maven, Gradle). Built with React and OpenRouter LLMs, it simplifies DevOps automation. The app features a sleek UI with dark mode support for better usability.</p>
             </div>
             <div className="project">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Astro Raiders</h2></a>
-                <p>Developed and released a 2D shooting game with C# and Unity. This project is hosted on the Itch.io public marketplace.</p>
+                <a target="_blank" rel="noreferrer"><img src={insurance} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Priyanka-collab/InsuranceService" target="_blank" rel="noreferrer"><h2>Insurance Services</h2></a>
+                <p>InsuranceService is a Java-based backend application built using Node Js, APIs for managing insurance policies and customer data. It follows clean architecture principles, with modular layers for service, and repository. Ideal for enterprise-grade insurance domain solutions.</p>
             </div>
             <div className="project">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2>Datum: Integrated Learning Platform</h2></a>
-                <p>This is an online educational platform that provides high-quality, data science-focused learning resources in the Japanese language. I created the entire platform from scratch using Ruby on Rails.</p>
+                <a target="_blank" rel="noreferrer"><img src={ngrx} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Priyanka-collab/angular-reactive-ngrx" target="_blank" rel="noreferrer"><h2>Book Management</h2></a>
+                <p>This is basic Angular application integerated with Ngrx. Reactive forms are a model-driven approach to handling form inputs. Unlike template-driven forms, they are more scalable and allow better control over form validation and state. Key Features of Reactive Forms ✅ Strongly typed form controls ✅ Synchronous validation ✅ Dynamically updating form fields ✅ Easier integration with RxJS</p>
             </div>
             <div className="project">
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><img src={mock06} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="http://www.wemanage.jp/" target="_blank" rel="noreferrer"><h2>WeManage: Real Estate Asset Management</h2></a>
-                <p>This mobile application allows realtors in Japan to securely manage their property information and view future income predictions. This app is built with Ruby on Rails and JavaScript.</p>
+                <a target="_blank" rel="noreferrer"><img src={ngrxState} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Priyanka-collab/Ngrx-state-management" target="_blank" rel="noreferrer"><h2>Ngrx State Management</h2></a>
+                <p>This is a simple Reactive Angular application, that shows how state is maintained and how its controlled by actions and reducers. It also covers effects for asynchronous communication from the service. NgRx is a reactive state management library for Angular based on Redux. It uses actions, reducers, and selectors to manage and access state centrally. Effects handle side effects like API calls using RxJS observables. NgRx enables a predictable, scalable, and testable architecture in Angular apps.</p>
             </div>
             <div className="project">
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><img src={mock05} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.byuh.edu/covid-19-case-management" target="_blank" rel="noreferrer"><h2>COVID-19 Case Management</h2></a>
-                <p>Built official charts for COVID/vaccination tracking for an educational institution using JavaScript and the Google Sheets API v4. The dashboard served the university's leadership in their decision-making processes.</p>
+                <a target="_blank" rel="noreferrer"><img src={todo} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Priyanka-collab/mytodo" target="_blank" rel="noreferrer"><h2>To-Do App</h2></a>
+                <p>A simple Todo App built using Angular to manage daily tasks. Users can add, edit, and delete todo items dynamically. The app uses two-way data binding and component-based architecture. Lightweight, responsive, and ideal for learning Angular CRUD operations.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><img src={mock04} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/multi-reg-analysis" target="_blank" rel="noreferrer"><h2>Multiple Regression Property Analysis</h2></a>
-                <p>Analyzed the real estate market in Japan and predicted property prices by implementing statistical methods such as OLS and multi-regression analysis. This project leveraged Python and various libraries such as Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
+                <a target="_blank" rel="noreferrer"><img src={login} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Priyanka-collab/Angular17-forms-login-signup" target="_blank" rel="noreferrer"><h2>Angular Login/SignUp Form</h2></a>
+                <p>A simple Login and Signup form built using Angular with reactive forms. Includes form validations for email, password strength, and required fields. Implements error handling and dynamic feedback for user inputs. Ideal for learning form control, validation, and authentication flow basics.</p>
             </div>
             <div className="project">
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://holokai.byuh.edu/programs-of-study" target="_blank" rel="noreferrer"><h2>Programs of Study</h2></a>
-                <p>Designed and developed a custom component for a CMS-based platform (e.g., 'Brightspot') using Java, Handlebars, and LESS. University students can find their majors of interest through this module.</p>
+                <a target="_blank" rel="noreferrer"><img src={ekart} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Priyanka-collab/Angular17-ecommerce-app" target="_blank" rel="noreferrer"><h2>Ecommerce App</h2></a>
+                <p>A feature-rich e-commerce website built using Angular, inspired by platforms like BigBasket. Includes modules for product listing, search/filter, shopping cart, and checkout. Implements component-based architecture, routing, and state management for smooth UX. Responsive UI with clean design, ideal for showcasing Angular in real-world e-commerce scenarios.</p>
             </div>
-            <div className="project">
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><img src={mock02} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://hookele.byuh.edu/transfer-evaluation-guidelines-and-matrix" target="_blank" rel="noreferrer"><h2>Transfer Evaluation Matrix</h2></a>
-                <p>Created an interactive CSV table generator with Java, Handlebars, and LESS. This project helps transfer students to quickly identify eligible credits.</p>
-            </div>
-            <div className="project">
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/yujisatojr/submeowrine" target="_blank" rel="noreferrer"><h2>Submeowrine</h2></a>
-                <p>Developed and released an Android mobile application using Java and Android Studio that runs a 2D shooting game.</p>
-            </div>
+            
         </div>
     </div>
     );
